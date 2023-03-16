@@ -1,22 +1,20 @@
+import { Task } from "./task.js";
 // creates Dom Cards
     // can inherit from the Task prototype
-class domCards {
+class Card extends Task {
     static allCards = []
-    constructor(title, info, tags, date, completed) {
-      this.title = title;
-      this.info = info;
-      this.tags = tags;
-      this.date = date;
-      this.completed = completed;
+    constructor(title, info, tags, date, completed, color) {
+        super(title, info, tags, date, completed)
+        this.color = color
     }
+      
+    static listCards = () => {
+        console.log(Card.allCards);
+    };
 }
 
-domCards.prototype.listCards = () => {
-    console.log(domCards.allCards);
-};
-
 // contains logic for building a single card
-export const createTaskCard = (obj) => {};
+const newTaskCard = (obj) => {};
 
 // iterates through the Task.taskList array and builds a card for each object
-const createAll = (array) => {};
+export const createAll = (array) => {};

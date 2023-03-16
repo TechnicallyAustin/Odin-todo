@@ -1,6 +1,6 @@
 // Card Logic
-import { createTaskCard } from "./card.js";
-class Task{
+import {createAll } from "./card.js";
+export class Task{
     static taskList = []
     constructor(title, info, tags, date, completed){
         this.title = title;
@@ -11,10 +11,13 @@ class Task{
         Task.taskList.push(this);
     };
 
+    static listAll = () => {
+       console.log(Task.taskList) 
+    }
+
 }
 
-Task.prototype.listAll = () => {
-   console.log(Task.taskList) 
-}
 
 Task.prototype.listAll()
+
+const card = Object.create(Task)
