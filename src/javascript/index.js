@@ -2,6 +2,8 @@ import "bootstrap";
 import "jquery"
 import 'popper.js'
 import "../css/styles.css";
-import { Page } from "./page.js";
+import { buildPage } from "./page.js";
+
+buildPage()
 
 

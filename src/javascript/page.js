@@ -1,10 +1,11 @@
 // creates the Page and calls abstracted functions to create section info
-export const Page = {
+const Page = {
     page: document.querySelector(".page-content"),
     content: null,
     header: function () {
         const header = this.page.appendChild(document.createElement("header"));
         header.setAttribute("class", "")
+        navbar.nav()
         navbar.logo()
         navbar.links()
     },
@@ -25,7 +26,9 @@ export const Page = {
 
 // creates a navBar and appends it to the header
 const navbar = {
+    header: document.querySelector("header"),
     content: null,
+    nav: function(){},
     logo: function(){},
     links: function(){}
 }
@@ -41,8 +44,14 @@ const mainElements = {
 // creates the footer elements 
 const footerElements = {
     content: null,
-    footer: function(){},
+    footer: document.querySelector("footer"),
     info: function(){},
     text: function(){}
+}
+
+export function buildPage(){
+    Page.header()
+    Page.main()
+    Page.footer()
 }
 
