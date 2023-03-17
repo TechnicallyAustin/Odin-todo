@@ -18,7 +18,6 @@ const Page = {
     footer: function () {
         const footer = this.page.appendChild(document.createElement("footer"));
         footer.setAttribute("class", "")
-        footerElements.footer()
         footerElements.info()
         footerElements.text()
     }

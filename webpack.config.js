@@ -11,18 +11,18 @@ module.exports = {
     rules: [
       {
         // ES6 Loader
-        test: /\.js$/,
+        test: /\.js$/i,
         exclude: /node_modules/,
         use: ["babel-loader"],
       },
       // CSS Loader
       {
-        test: /\.css$/,
+        test: /\.css$/i,
         use: ["style-loader", "css-loader", "sass-loader"],
       },
       // Bootstrap CSS
       {
-        test: /\.scss$/,
+        test: /\.scss$/i,
         use: [
           "style-loader",
           "css-loader",
