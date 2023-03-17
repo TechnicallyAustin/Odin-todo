@@ -27,7 +27,10 @@ const Page = {
 const navbar = {
     header: document.querySelector("header"),
     content: null,
-    nav: function(){},
+    nav: function(){
+        const nav = this.header.appendChild(document.createElement("nav"))
+        this.content = nav
+    },
     logo: function(){},
     links: function(){}
 }
@@ -36,8 +39,10 @@ const navbar = {
 const mainElements = {
     main: document.querySelector("main"),
     content: null,
-    newSection: function(){}, // new section is set to Content -- Task Folder
-    article: function(){} // appends an article to content. -- Tasks
+    newSection: function(){
+        const section = this.header.appendChild(document.createElement("section"))
+    }, // new section is set to Content -- Task Folder
+    article: function(){} // appends an article to content. -- Task
 }
 
 // creates the footer elements 
