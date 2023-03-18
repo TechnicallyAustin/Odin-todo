@@ -4,20 +4,20 @@ const Page = {
     content: null,
     header: function () {
         const header = this.page.appendChild(document.createElement("header"));
-        header.setAttribute("class", "")
+        header.setAttribute("class", "header")
         navbar.nav()
         navbar.logo()
         navbar.links()
     },
     main: function () {
         const main = this.page.appendChild(document.createElement("main"));
-        main.setAttribute("class", "")
+        main.setAttribute("class", "main")
         mainElements.newSection()
         mainElements.article()
         },
     footer: function () {
         const footer = this.page.appendChild(document.createElement("footer"));
-        footer.setAttribute("class", "")
+        footer.setAttribute("class", "footer")
         footerElements.info()
         footerElements.text()
     }
@@ -31,7 +31,12 @@ const navbar = {
         const nav = this.header.appendChild(document.createElement("nav"))
         this.content = nav
     },
-    logo: function(){},
+    logo: function(){
+        const img = this.content.appendChild(document.createElement("img"))
+        img.setAttribute("class","")
+        img.setAttribute("alt","")
+        img.setAttribute("src", "")
+    },
     links: function(){}
 }
 
