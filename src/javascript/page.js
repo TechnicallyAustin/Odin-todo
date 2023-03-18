@@ -37,7 +37,10 @@ const navbar = {
         img.setAttribute("alt","")
         img.setAttribute("src", "")
     },
-    links: function(){}
+    links: function(){
+        const list = this.content.appendChild(document.createElement("ul"))
+        const iteems = ["","",""]
+    }
 }
 
 // creates a section and article within the Main section
@@ -54,8 +57,12 @@ const mainElements = {
 const footerElements = {
     content: null,
     footer: document.querySelector("footer"),
-    info: function(){},
-    text: function(){}
+    info: function(){
+        const info = this.footer.appendChild(document.createElement("p"))
+    },
+    text: function(){
+        const text = this.footer.appendChild(document.createElement("p"));
+    }
 }
 
 export function buildPage(){
