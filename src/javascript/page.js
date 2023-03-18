@@ -5,9 +5,9 @@ const Page = {
     header: function () {
         const header = this.page.appendChild(document.createElement("header"));
         header.setAttribute("class", "header")
-        navbar.nav()
-        navbar.logo()
-        navbar.links()
+        //navbar.nav()
+        //navbar.logo()
+        //navbar.links()
     },
     main: function () {
         const main = this.page.appendChild(document.createElement("main"));
@@ -25,7 +25,7 @@ const Page = {
 
 // creates a navBar and appends it to the header
 const navbar = {
-    header: document.querySelector("header"),
+    header: document.querySelector(".header"),
     content: null,
     nav: function(){
         const nav = this.header.appendChild(document.createElement("nav"))
@@ -39,7 +39,7 @@ const navbar = {
     },
     links: function(){
         const list = this.content.appendChild(document.createElement("ul"))
-        const iteems = ["","",""]
+        const items = ["","",""]
     }
 }
 
@@ -48,7 +48,7 @@ const mainElements = {
     main: document.querySelector("main"),
     content: null,
     newSection: function(){
-        const section = this.header.appendChild(document.createElement("section"))
+        const section = this.main.appendChild(document.createElement("section"))
     }, // new section is set to Content -- Task Folder
     article: function(){} // appends an article to content. -- Task
 }
@@ -66,8 +66,10 @@ const footerElements = {
 }
 
 export function buildPage(){
+    console.log(navbar.header)
     Page.header()
     Page.main()
     Page.footer()
 }
 
+console.log(navbar.header)

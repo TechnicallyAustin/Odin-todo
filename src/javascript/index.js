@@ -4,6 +4,8 @@ import 'popper.js'
 import "../css/styles.css";
 import { buildPage } from "./page.js";
 
-buildPage()
+document.addEventListener("DOMContentLoaded", () => {
+    buildPage()
+})
 
 
