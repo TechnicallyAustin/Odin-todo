@@ -21,7 +21,13 @@ const Page = {
       },
       links: function () {
         const list = this.content.appendChild(document.createElement("ul"));
-        const items = ["Day", "Week", "Month"];
+        const item = list.appendChild(document.createElement("li"));
+        const image = item.appendChild(document.createElement("img"));
+        image.setAttribute("src", "../src/assets/add2.svg");
+        image.setAttribute("alt", "")
+        image.setAttribute("class", "nav-add");
+
+
       },
       build: function () {
         this.nav();
