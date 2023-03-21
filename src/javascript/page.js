@@ -12,15 +12,18 @@ const Page = {
       nav: function () {
         console.log(header);
         const nav = header.appendChild(document.createElement("nav"));
+        nav.setAttribute("class", "d-flex justify-content-between align-items-center mx-2 h-100")
         this.content = nav;
       },
       logo: function () {
         const logo = this.content.appendChild(document.createElement("p"));
         logo.setAttribute("class", "page-logo text-white fs-2 mb-0")
-        logo.textContent = "Odin Todo"
+        logo.textContent = "Tech Todo"
       },
       links: function () {
+        const linksList = []
         const list = this.content.appendChild(document.createElement("ul"));
+        list.setAttribute("class", "pb-0 mb-0")
         const item = list.appendChild(document.createElement("li"));
         const image = item.appendChild(document.createElement("img"));
         image.setAttribute("src", "../src/assets/add2.svg");
@@ -40,7 +43,7 @@ const Page = {
   },
   main: function () {
     const main = this.page.appendChild(document.createElement("main"));
-    main.setAttribute("class", "main bg-secondary");
+    main.setAttribute("class", "main bg-light");
   },
   footer: function () {
     const footer = this.page.appendChild(document.createElement("footer"));
