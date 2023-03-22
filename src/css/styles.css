@@ -15,11 +15,12 @@ main {
 }
 
 .icon {
-    width: 2vh;
+    width: 2vw;
+    min-width: 1vw;
     height: auto;
 }
 
 .sub-icon{
-    width: 2vh;
+    width: 1vw;
     height: auto;
 }
