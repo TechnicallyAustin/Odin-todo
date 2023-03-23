@@ -39,3 +39,5 @@ export function group(){
 
 // title -- image
  // appenddiv
+
+ // work on creating smooth responses
