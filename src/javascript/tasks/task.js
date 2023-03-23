@@ -20,4 +20,4 @@ export class Task{
 
 Task.prototype.listAll()
 
-const card = Object.create(Task)
+//const card = Object.create(Task)

@@ -6,7 +6,7 @@ export function group(){
     const titles = ["Lists", "Groups", "Filter", "Priority"]
     for (let title of titles){
         let titleContainer = container.appendChild(document.createElement("div"));
-        titleContainer.setAttribute("class", "title-container d-flex justify-content-start align-items-center")
+        titleContainer.setAttribute("class", "title-container d-flex flex-column justify-content-start align-items-center")
 
         let item = titleContainer.appendChild(document.createElement("p"));
         item.setAttribute("class", "task-filter-title row m-0 ms-2 fs-4 border-bottom border-3 border-dark")
@@ -21,7 +21,7 @@ export function group(){
             console.log("clicked")
             const name = titleContainer.firstChild.textContent
             const items = titleContainer.appendChild(document.createElement("div"))
-            items.setAttribute("class", "h-25 2-25 bg-dark")
+            items.setAttribute("class", "group-container h-100 w-100 bg-dark")
             let list = items.appendChild(document.createElement("p"));
             list.textContent = "Test List"
 

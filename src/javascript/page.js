@@ -64,8 +64,18 @@ const Page = {
   },
 };
 
+function newTask(){
+  const add = document.querySelector(".nav-add")
+  add.addEventListener("click",()=>{
+    console.log("add button clicked")
+    // this should call a function that creates a popup form
+
+  })
+}
+
 export function buildPage() {
   Page.header();
   Page.main();
   Page.footer();
+  newTask()
 }
