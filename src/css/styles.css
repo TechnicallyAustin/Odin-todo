@@ -24,3 +24,11 @@ main {
     width: 1vw;
     height: auto;
 }
+
+.modal{
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+}

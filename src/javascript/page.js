@@ -1,3 +1,5 @@
+import { newTaskModal } from "./tasks/newTask";
+
 // creates the Page and calls abstracted functions to create section info
 const Page = {
   page: document.querySelector(".page-content"),
@@ -68,7 +70,7 @@ function newTask(){
   const add = document.querySelector(".nav-add")
   add.addEventListener("click",()=>{
     console.log("add button clicked")
-    // this should call a function that creates a popup form
+    newTaskModal()
 
   })
 }
