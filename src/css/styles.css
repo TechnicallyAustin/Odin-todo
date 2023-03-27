@@ -15,8 +15,8 @@ main {
 }
 
 .icon {
-    width: 2vw;
-    min-width: 1vw;
+    width: 5vw;
+    min-width: 2vw;
     height: auto;
 }
 
@@ -31,4 +31,8 @@ main {
     top: 5%;
     left: 45%;
 
+    display: grid;
+    grid-template-rows: 1fr 8fr 1fr;
+    grid-auto-rows: 1fr;
 }
+
