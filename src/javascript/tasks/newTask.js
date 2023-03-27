@@ -33,7 +33,7 @@ const modal = {
     modal: null,
     createModal: function(){
         const modal = document.createElement("div");
-        modal.setAttribute("class", "modal w-25 h-25 bg-dark")
+        modal.setAttribute("class", "modal w-50 h-25 bg-dark")
         this.page.appendChild(modal);
         this.modal = modal
     },

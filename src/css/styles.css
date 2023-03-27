@@ -28,7 +28,7 @@ main {
 .modal{
     display: block;
     position: fixed;
-    top: 50%;
-    left: 50%;
+    top: 5%;
+    left: 45%;
 
 }
