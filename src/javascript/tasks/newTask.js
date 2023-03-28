@@ -59,6 +59,7 @@ const modal = {
     );
 
     const form = body.appendChild(document.createElement("form"));
+    form.setAttribute("class", "task-form h-100 w-100 d-flex flex-column justify-content-start align-items-center")
 
     const legend = form.appendChild(document.createElement("p"));
     legend.setAttribute("class", "legend text-white mb-0");
@@ -71,7 +72,7 @@ const modal = {
       let fieldset = document.createElement("fieldset");
       fieldset.setAttribute(
         "class",
-        "d-flex flex-column justify-content-around align-items-center w-75"
+        "d-flex justify-content-around align-items-center w-75"
       );
       fieldset.setAttribute("class", `${value}-field`);
 

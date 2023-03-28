@@ -26,13 +26,10 @@ main {
 }
 
 .modal{
+    height: 35%;
     display: block;
     position: fixed;
     top: 5%;
     left: 45%;
-
-    display: grid;
-    grid-template-rows: 1fr 8fr 1fr;
-    grid-auto-rows: 1fr;
 }
 
