@@ -26,10 +26,11 @@ main {
 }
 
 .modal{
-    height: 35%;
+
     display: block;
     position: fixed;
     top: 5%;
     left: 45%;
 }
+
 

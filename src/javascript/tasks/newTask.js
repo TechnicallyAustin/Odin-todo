@@ -55,14 +55,14 @@ const modal = {
     const body = this.modal.appendChild(document.createElement("div"));
     body.setAttribute(
       "class",
-      "modal-body h-100 d-flex flex-column justify-content-around align-items-start"
+      "modal-body h-75 d-flex flex-column justify-content-around align-items-start"
     );
 
     const form = body.appendChild(document.createElement("form"));
-    form.setAttribute("class", "task-form h-100 w-100 d-flex flex-column justify-content-start align-items-center")
+    form.setAttribute("class", "task-form h-100 w-100 d-flex flex-column justify-content-around align-items-start")
 
     const legend = form.appendChild(document.createElement("p"));
-    legend.setAttribute("class", "legend text-white mb-0");
+    legend.setAttribute("class", "legend text-white mb-0 fs-2");
     legend.textContent = "Add a New Task";
 
     const inputs = ["Title", "Info", "Tags", "Date", "Completed", "Color"];
@@ -94,7 +94,7 @@ const modal = {
   footer: function () {
     const form = document.querySelector("form");
     const footer = document.createElement("footer");
-    footer.setAttribute("class", "modal-footer");
+    footer.setAttribute("class", "modal-footer h-25");
 
     const submit = footer.appendChild(document.createElement("button"));
     submit.setAttribute("value", "submit");
