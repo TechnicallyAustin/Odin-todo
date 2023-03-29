@@ -95,6 +95,7 @@ const modal = {
     const form = document.querySelector("form");
     const footer = document.createElement("footer");
     footer.setAttribute("class", "modal-footer h-25");
+    // end form here
 
     const submit = footer.appendChild(document.createElement("button"));
     submit.setAttribute("value", "submit");
