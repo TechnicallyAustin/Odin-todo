@@ -11,3 +11,5 @@ const createModal = {
     },
     footer: function(){}
 }
+
+// creates the modal and calls the form module
