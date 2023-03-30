@@ -72,9 +72,9 @@ const modal = {
       let fieldset = document.createElement("fieldset");
       fieldset.setAttribute(
         "class",
-        "d-flex justify-content-around align-items-center w-75"
+        "d-flex justify-content-around align-items-center w-100"
       );
-      fieldset.setAttribute("class", `${value}-field`);
+      fieldset.setAttribute("class", `${value}-field d-flex justify-content-around align-items-center`);
 
       let label = fieldset.appendChild(document.createElement("label"));
       label.setAttribute("class", "text-white");
@@ -82,6 +82,7 @@ const modal = {
       label.textContent = value;
 
       let formInput = fieldset.appendChild(document.createElement("input"));
+      formInput.setAttribute("class", "w-50")
       formInput.setAttribute("type", "text");
       formInput.setAttribute("id", "");
 
