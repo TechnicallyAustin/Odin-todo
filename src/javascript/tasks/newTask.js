@@ -111,4 +111,5 @@ export function newTaskModal() {
   modal.body();
   modal.footer();
   console.log("modal created");
+  
 }
