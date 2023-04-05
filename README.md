@@ -10,3 +10,5 @@ need to flesh out card object and design
 planning design changes
 
 resuming code progress to implement changes
+
+hopefully last day of planning
