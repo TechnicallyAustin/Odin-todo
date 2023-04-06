@@ -95,12 +95,12 @@ const modal = {
   footer: function () {
     const form = document.querySelector("form");
     const footer = document.createElement("footer");
-    footer.setAttribute("class", "modal-footer w-100 d-flex justify-content-end align-items-center");
+    footer.setAttribute("class", "modal-footer bg-light h-100 w-100 d-flex justify-content-end align-items-center");
     // end form here
 
     const submit = footer.appendChild(document.createElement("button"));
     submit.setAttribute("value", "submit");
-    submit.setAttribute("class", "modal-btn btn btn-submit btn-success")
+    submit.setAttribute("class", "modal-btn btn align-self-center  h-100 w-50 btn-success")
     submit.textContent = "Add Task";
     this.modal.appendChild(footer);
   },
