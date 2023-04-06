@@ -35,16 +35,16 @@ const modal = {
   },
   header: function () {
     const dialouge = this.modal.appendChild(document.createElement("div"));
-    dialouge.setAttribute("class", "modal-dialouge w-100");
+    dialouge.setAttribute("class", "modal-dialouge w-100 d-flex justify-content-between align-items-center");
 
     const content = dialouge.appendChild(document.createElement("div"));
     content.setAttribute("class", "modal-content");
 
     const header = content.appendChild(document.createElement("div"));
-    header.setAttribute("class", "modal-header");
+    header.setAttribute("class", "modal-header w-100 d-flex justify-content-between align-items-center");
 
     const title = header.appendChild(document.createElement("div"));
-    title.setAttribute("class", "modal-title");
+    title.setAttribute("class", "modal-title w-100 d-flex justify-content-between align-items-center");
     title.textContent = "What do you need to do?";
 
     const button = title.appendChild(document.createElement("button"));
@@ -55,11 +55,11 @@ const modal = {
     const body = this.modal.appendChild(document.createElement("div"));
     body.setAttribute(
       "class",
-      "modal-body h-75 d-flex flex-column justify-content-around align-items-start"
+      "modal-body h-100 d-flex flex-column justify-content-around align-items-start"
     );
 
     const form = body.appendChild(document.createElement("form"));
-    form.setAttribute("class", "task-form h-100 w-100 d-flex flex-column justify-content-around align-items-start")
+    form.setAttribute("class", "task-form h-100 w-100")
 
     const legend = form.appendChild(document.createElement("p"));
     legend.setAttribute("class", "legend text-white mb-0 fs-2");
@@ -95,11 +95,12 @@ const modal = {
   footer: function () {
     const form = document.querySelector("form");
     const footer = document.createElement("footer");
-    footer.setAttribute("class", "modal-footer h-25");
+    footer.setAttribute("class", "modal-footer w-100 d-flex justify-content-end align-items-center");
     // end form here
 
     const submit = footer.appendChild(document.createElement("button"));
     submit.setAttribute("value", "submit");
+    submit.setAttribute("class", "modal-btn btn btn-submit btn-success")
     submit.textContent = "Add Task";
     this.modal.appendChild(footer);
   },

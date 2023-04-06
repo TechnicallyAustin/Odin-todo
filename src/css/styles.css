@@ -15,7 +15,7 @@ main {
 }
 
 .icon {
-    width: 5vw;
+    width: 4vw;
     min-width: 2vw;
     height: auto;
 }
@@ -26,11 +26,18 @@ main {
 }
 
 .modal{
-
-    display: block;
+    display: grid;
+    grid-template-rows: 1fr 8fr 1fr;
     position: fixed;
     top: 5%;
     left: 45%;
+}
+
+form{
+    display: grid;
+    grid-template-areas:
+    "legend"
+    "fieldset"
 }
 
 
