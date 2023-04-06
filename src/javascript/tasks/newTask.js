@@ -44,7 +44,7 @@ const modal = {
     header.setAttribute("class", "modal-header w-100 d-flex justify-content-between align-items-center");
 
     const title = header.appendChild(document.createElement("div"));
-    title.setAttribute("class", "modal-title w-100 d-flex justify-content-between align-items-center");
+    title.setAttribute("class", "modal-title fs-2 w-100 d-flex justify-content-between align-items-center");
     title.textContent = "What do you need to do?";
 
     const button = title.appendChild(document.createElement("button"));
@@ -62,10 +62,10 @@ const modal = {
     form.setAttribute("class", "task-form h-100 w-100")
 
     const legend = form.appendChild(document.createElement("p"));
-    legend.setAttribute("class", "legend text-white mb-0 fs-2");
+    legend.setAttribute("class", "legend text-white mb-0 fs-3");
     legend.textContent = "Add a New Task";
 
-    const inputs = ["Title", "Info", "Tags", "Date", "Completed", "Color"];
+    const inputs = ["Title", "Info", "Tags", "Date", "Complete", "Color"];
     for (let input of inputs) {
       let value = input.toLowerCase();
 
@@ -77,7 +77,7 @@ const modal = {
       fieldset.setAttribute("class", `${value}-field d-flex justify-content-around align-items-center`);
 
       let label = fieldset.appendChild(document.createElement("label"));
-      label.setAttribute("class", "text-white");
+      label.setAttribute("class", "text-white w-25");
       label.setAttribute("for", `${value}`);
       label.textContent = value;
 
