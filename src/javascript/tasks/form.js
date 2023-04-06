@@ -1,10 +1,12 @@
 
 
 function newTaskForm(){
-const body = document.querySelector("modal-body")
+const body = document.querySelector(".modal-body")
     const formElements = {
         form: null,
-        createForm: function(){},
+        createForm: function(){
+            
+        },
         legend: function(){},
         fieldset: function(){
             const elements = {

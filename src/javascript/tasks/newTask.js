@@ -1,29 +1,3 @@
-function newTask() {
-  // creates a modal containing a form
-  // Modal
-  // div class modal
-  // div class modal dialouge
-  // div class modal content
-  // div class modal header
-  // div class modal title
-  // button class btn close
-  // div class modal body
-  // form
-  // inputs
-  // title
-  // info
-  // tags
-  // date
-  // completed
-  // color
-  // submit
-  //div class modal footer
-  // button class btn close
-  // button class btn save
-  // submits form and calls a function to create Tasks that also creates cards.
-  // on submit create a task with the inputs of the modal
-}
-
 const modal = {
   page: document.querySelector(".page-content"),
   modal: null,
@@ -82,7 +56,7 @@ const modal = {
       label.textContent = value;
 
       let formInput = fieldset.appendChild(document.createElement("input"));
-      formInput.setAttribute("class", "w-50")
+      formInput.setAttribute("class", " h-75 w-50")
       formInput.setAttribute("type", "text");
       formInput.setAttribute("id", "");
 
@@ -95,13 +69,19 @@ const modal = {
   footer: function () {
     const form = document.querySelector("form");
     const footer = document.createElement("footer");
-    footer.setAttribute("class", "modal-footer bg-light h-100 w-100 d-flex justify-content-end align-items-center");
+    footer.setAttribute("class", "modal-footer  h-50 w-100");
     // end form here
 
     const submit = footer.appendChild(document.createElement("button"));
     submit.setAttribute("value", "submit");
-    submit.setAttribute("class", "modal-btn btn align-self-center  h-100 w-50 btn-success")
+    submit.setAttribute("class", "modal-btn btn h-100 w-100 btn-success")
     submit.textContent = "Add Task";
+
+    const cancel = footer.appendChild(document.createElement("button"));
+    cancel.setAttribute("value", "Cancel")
+    cancel.setAttribute("class", "modal-btn btn btn-danger h-100 w-100")
+    cancel.textContent = "Cancel"
+
     this.modal.appendChild(footer);
   },
 };
