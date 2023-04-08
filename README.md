@@ -12,3 +12,5 @@ planning design changes
 resuming code progress to implement changes
 
 hopefully last day of planning
+
+home network down pending modal changes
