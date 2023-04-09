@@ -16,3 +16,5 @@ hopefully last day of planning
 home network down pending modal changes
 
 need to flesh out classes for tasks
+
+implementing refactors tomorrow 
