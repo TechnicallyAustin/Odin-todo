@@ -1,3 +1,5 @@
+import { newTaskForm } from "./form";
+
 const modal = {
   page: document.querySelector(".page-content"),
   modal: null,
@@ -31,6 +33,7 @@ const modal = {
       "class",
       "modal-body h-100 d-flex flex-column justify-content-around align-items-start"
     );
+    newTaskForm()
 
     //const form = body.appendChild(document.createElement("form"));
     //form.setAttribute("class", "task-form h-100 w-100")
