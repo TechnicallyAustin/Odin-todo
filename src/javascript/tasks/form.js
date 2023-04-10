@@ -15,17 +15,43 @@ const body = document.querySelector(".modal-body")
             legend.textContent = "Add a New Task";
         },
         fieldset: function(){
+            const inputs = ["Title", "Info", "Tags", "Date", "Complete", "Color"]
             const elements = {
-                inputs: ["Title", "Info", "Tags", "Date", "Complete", "Color"],
-                label: function(){},
+                fields: function(){
+                    //for (let input of inputs){
+                        let value = input.toLowerCase()
+                        let fieldset = document.createElement("fieldset");
+                        fieldset.setAttribute("class", "d-flex justify-content-around align-items-center w-100");
+                        fieldset.setAttribute("class", `${value}-field d-flex justify-content-around align-items-center`);
+                    //}
+                },
+                label: function(){
+                    //for (let input of inputs){
+                        let value = input.toLowerCase()
+                        let label = fieldset.appendChild(document.createElement("label"));
+                        label.setAttribute("class", "text-white w-25");
+                        label.setAttribute("for", `${value}`);
+                        label.textContent = value;
+                    //}
+                },
                 inputs: function(){
+                    //for (let input of inputs){
+                        let value = input.toLowerCase()
+
+                    //}
                 }
             }
-            elements.label()
-            elements.inputs()
+            for (let input of inputs) {
+              elements.fields();
+              elements.label();
+              elements.inputs();
+              console.log("Abstracted Form");
+            }
         },
         cancel: function(){},
         submit: function(){}
+
+        
     }
 }
 

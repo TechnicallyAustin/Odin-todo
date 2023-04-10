@@ -70,7 +70,7 @@ function newTask(){
   const add = document.querySelector(".nav-add")
   add.addEventListener("click",()=>{
     console.log("add button clicked")
-    newTaskModal()
+    newTaskModal() // replace with modal.js
 
   })
 }
