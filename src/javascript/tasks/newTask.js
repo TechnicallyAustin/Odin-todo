@@ -20,7 +20,7 @@ const modal = {
     header.setAttribute("class", "modal-header w-100 d-flex justify-content-between align-items-center");
 
     const title = header.appendChild(document.createElement("div"));
-    title.setAttribute("class", "modal-title fs-2 w-100 d-flex justify-content-between align-items-center");
+    title.setAttribute("class", "modal-title fs-4 w-100 d-flex justify-content-between align-items-center");
     title.textContent = "What do you need to do?";
 
     const button = title.appendChild(document.createElement("button"));

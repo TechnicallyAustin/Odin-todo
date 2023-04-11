@@ -27,7 +27,7 @@ main {
 
 .modal{
     display: grid;
-    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-rows: 1fr 10fr 1fr;
     position: fixed;
     top: 5%;
     left: 45%;
