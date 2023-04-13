@@ -12,7 +12,7 @@ export function collapse(){
 
 
     function toggle(){
-        const expand = "sidebar expanded bg-dark bg-opacity-25 w-75"
+        const expand = "sidebar d-flex justify-content-around align-items-center expanded bg-dark bg-opacity-25 w-75"
         const collapse = "sidebar collapsed bg-light w-25"
         const menuSrc = "../src/assets/expand-right.svg";
         const sideMenuSrc = "../src/assets/collapse-left.svg";
@@ -33,6 +33,6 @@ export function collapse(){
     };
 
     image.addEventListener("click", () => {
-        toggle()
+        
     });
 };

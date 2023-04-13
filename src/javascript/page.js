@@ -1,3 +1,4 @@
+import { sidebar } from "./sidebar/sidebar";
 import { newTaskModal } from "./tasks/newTask";
 
 // creates the Page and calls abstracted functions to create section info
@@ -6,42 +7,44 @@ const Page = {
   content: null,
   header: function () {
     const header = this.page.appendChild(document.createElement("header"));
-    header.setAttribute("class", "header bg-black");
+    header.setAttribute("class", "header h-100 w-100 d-flex justify-content-center align-items-start mt-5 bg-lgiht");
+    sidebar()
+
 
     // creates a navBar and appends it to the header
-    const navbar = {
-      content: null,
-      nav: function () {
-        console.log(header);
-        const nav = header.appendChild(document.createElement("nav"));
-        nav.setAttribute("class", "d-flex justify-content-between align-items-center mx-2 h-100")
-        this.content = nav;
-      },
-      logo: function () {
-        const logo = this.content.appendChild(document.createElement("p"));
-        logo.setAttribute("class", "page-logo text-white fs-2 mb-0")
-        logo.textContent = "Tech Todo"
-      },
-      links: function () {
-        const linksList = []
-        const list = this.content.appendChild(document.createElement("ul"));
-        list.setAttribute("class", "pb-0 mb-0")
-        const item = list.appendChild(document.createElement("li"));
-        const image = item.appendChild(document.createElement("img"));
-        image.setAttribute("src", "../src/assets/add2.svg");
-        image.setAttribute("alt", "")
-        image.setAttribute("class", "nav-add");
-
-
-      },
-      build: function () {
-        this.nav();
-        this.logo();
-        this.links();
-      },
-    };
-
-    navbar.build();
+    //const navbar = {
+    //  content: null,
+    //  nav: function () {
+    //    console.log(header);
+    //    const nav = header.appendChild(document.createElement("nav"));
+    //    nav.setAttribute("class", "d-flex justify-content-between align-items-center mx-2 h-100")
+    //    this.content = nav;
+    //  },
+    //  logo: function () {
+    //    const logo = this.content.appendChild(document.createElement("p"));
+    //    logo.setAttribute("class", "page-logo text-white fs-2 mb-0")
+    //    logo.textContent = "Tech Todo"
+    //  },
+    //  links: function () {
+    //    const linksList = []
+    //    const list = this.content.appendChild(document.createElement("ul"));
+    //    list.setAttribute("class", "pb-0 mb-0")
+    //    const item = list.appendChild(document.createElement("li"));
+    //    const image = item.appendChild(document.createElement("img"));
+    //    image.setAttribute("src", "../src/assets/add2.svg");
+    //    image.setAttribute("alt", "")
+    //    image.setAttribute("class", "nav-add");
+//
+//
+    //  },
+    //  build: function () {
+    //    this.nav();
+    //    this.logo();
+    //    this.links();
+    //  },
+    //};
+//
+    //navbar.build();
   },
   main: function () {
     const main = this.page.appendChild(document.createElement("main"));
@@ -49,7 +52,7 @@ const Page = {
   },
   footer: function () {
     const footer = this.page.appendChild(document.createElement("footer"));
-    footer.setAttribute("class", "footer bg-black");
+    footer.setAttribute("class", " w-100 footer bg-black");
 
     const footerElements = {
       content: null,

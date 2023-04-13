@@ -1,9 +1,9 @@
 export function group(){
     const sidebar = document.querySelector(".sidebar")
     const container = sidebar.appendChild(document.createElement("div"));
-    container.setAttribute("class", "task-filter container justify-content-around align-items-center");
+    container.setAttribute("class", "task-filter container d-flex justify-content-around align-items-center");
 
-    const titles = ["Lists", "Groups", "Filter", "Priority"]
+    const titles = ["Today", "Upcoming", "Due", "Eventually"]
     for (let title of titles){
         let titleContainer = container.appendChild(document.createElement("div"));
         titleContainer.setAttribute("class", "title-container d-flex flex-column justify-content-start align-items-center")
