@@ -19,4 +19,6 @@ need to flesh out classes for tasks
 
 implementing refactors tomorrow 
 
-refactored form 
+refactored form
+
+need to clean up interface
