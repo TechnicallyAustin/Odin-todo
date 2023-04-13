@@ -23,12 +23,9 @@ export function newTaskForm() {
             fieldset.setAttribute("id", "")
 
             let label = fieldset.appendChild(document.createElement("label"))
-            label.setAttribute("class", "form-label text-white")
+            label.setAttribute("class", "form-label text-white mb-0 pt-2")
             label.setAttribute("id", "")
-            label.textContent = value
-
-            // let input = fieldset.appendChild(document.createElement("input"))
-            //input.setAttribute("class", "")
+            label.textContent = title
 
             switch (value){
                 case "title":
@@ -43,7 +40,7 @@ export function newTaskForm() {
                     let info = fieldset.appendChild(document.createElement("textarea"))
                     info.setAttribute("class", "form-control")
                     info.setAttribute("type", "textarea")
-                    info.setAttribute("rows", "5")
+                    info.setAttribute("rows", "3")
                     info.setAttribute("cols", "35")
                     break;
                 
@@ -62,7 +59,7 @@ export function newTaskForm() {
                 case "complete":
                     let complete = fieldset.appendChild(document.createElement("input"))
                     //fieldset.setAttribute("class", "p-0 w-75 d-flex justify-content-between align-items-center form-check form-switch")
-                    complete.setAttribute("class", "form-control form-check-input")
+                    complete.setAttribute("class", "form-control form-check-input p-0")
                     complete.setAttribute("type", "checkbox")
                     complete.setAttribute("value", "")
                     complete.setAttribute("unchecked","")
@@ -80,8 +77,18 @@ export function newTaskForm() {
         }
 
     },
-    cancel: function () {},
-    submit: function () {},
+    cancel: function(){
+        const footer = document.querySelector(".modal-footer");
+        const cancel = footer.appendChild(document.createElement("button"))
+        cancel.setAttribute("class","btn btn-lg btn-outline-danger bg-light h-100 w-100 text-danger");
+        cancel.textContent = "Cancel"
+    },
+    submit: function(){
+        const footer = document.querySelector(".modal-footer");
+        const submit = footer.appendChild(document.createElement("button"))
+        submit.setAttribute("class","btn btn-lg bg-success h-100 w-100 text-white");
+        submit.textContent = "Submit"
+    },
   };
 
     formElements.createForm();

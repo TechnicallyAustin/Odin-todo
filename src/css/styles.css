@@ -27,10 +27,17 @@ main {
 
 .modal{
     display: grid;
-    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
     position: fixed;
     top: 5%;
-    left: 45%;
+    left: 80%;
+    height: 55vh;
+    width: 20vw;
+}
+
+.modal-body{
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
 }
 
 form{

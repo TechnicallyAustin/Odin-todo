@@ -5,7 +5,7 @@ const modal = {
   modal: null,
   createModal: function () {
     const modal = document.createElement("div");
-    modal.setAttribute("class", "modal w-25 h-50 bg-dark p-2");
+    modal.setAttribute("class", "modal bg-secondary p-2");
     this.page.appendChild(modal);
     this.modal = modal;
   },
@@ -21,7 +21,7 @@ const modal = {
 
     const title = header.appendChild(document.createElement("div"));
     title.setAttribute("class", "modal-title fs-4 w-100 d-flex justify-content-between align-items-center");
-    title.textContent = "What do you need to do?";
+    title.textContent = "What's Happening?";
 
     const button = title.appendChild(document.createElement("button"));
     button.setAttribute("class", "btn-close");
@@ -33,13 +33,12 @@ const modal = {
       "class",
       "modal-body h-100 d-flex flex-column justify-content-around align-items-start"
     );
-    newTaskForm()
   },
   footer: function () {
-    const footer = document.createElement("footer");
-    footer.setAttribute("class", "modal-footer  h-50 w-100");
-    this.modal.appendChild(footer);
-  },
+    const footer = this.modal.appendChild(document.createElement("div"));
+    footer.setAttribute("class", "modal-footer h-100 w-100");
+    console.log("modal footer created")
+ }
 };
 
 export function newTaskModal() {
@@ -47,6 +46,7 @@ export function newTaskModal() {
   modal.header();
   modal.body();
   modal.footer();
+  newTaskForm()
   console.log("modal created");
   
 }
