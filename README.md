@@ -18,3 +18,7 @@ home network down pending modal changes
 need to flesh out classes for tasks
 
 implementing refactors tomorrow 
+
+refactored form
+
+need to clean up interface
