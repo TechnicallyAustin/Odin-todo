@@ -4,6 +4,7 @@ export function group(){
     container.setAttribute("class", "task-filter container d-flex justify-content-around align-items-center");
 
     const titles = ["Today", "Upcoming", "Due", "Eventually"]
+    const options = ["Groups","Tags","Filter"]
     for (let title of titles){
         let titleContainer = container.appendChild(document.createElement("div"));
         titleContainer.setAttribute("class", "title-container d-flex flex-column justify-content-start align-items-center")

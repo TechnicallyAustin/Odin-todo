@@ -8,17 +8,17 @@ const Page = {
   content: null,
   header: function () {
     const header = this.page.appendChild(document.createElement("header"));
-    header.setAttribute("class", "header h-100 w-100 d-flex justify-content-center align-items-start mt-5 bg-lgiht");
+    header.setAttribute("class", "header h-100 w-100 d-flex justify-content-center align-items-start bg-lgiht");
     sidebar()
   },
   main: function () {
     const main = this.page.appendChild(document.createElement("main"));
-    main.setAttribute("class", "main bg-dark d-flex flex-column justify-content-between align-items-start");
+    main.setAttribute("class", "main h-100 bg-dark d-flex flex-column justify-content-around align-items-center mx-3");
     content()
   },
   footer: function () {
     const footer = this.page.appendChild(document.createElement("footer"));
-    footer.setAttribute("class", " w-100 footer bg-black");
+    footer.setAttribute("class", " h-100 w-100 footer bg-black");
 
     const footerElements = {
       content: null,

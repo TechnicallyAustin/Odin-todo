@@ -1,17 +1,15 @@
 .page-content{
     height: 100vh;
+    max-height: 100vh;
     width: 100vw;
+    max-width: 100vw;;
     display: grid;
-    grid-template-columns: 2fr 6fr;
-    grid-template-rows: 36fr 1fr;;
+    grid-template-columns: 15vw 85vw;
+    grid-template-rows: 95vh 5vh;
 }
 
 .header{
     display: grid;
-
-}
-
-main {
 
 }
 
