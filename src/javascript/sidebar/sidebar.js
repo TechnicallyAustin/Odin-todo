@@ -5,7 +5,7 @@ export function sidebar(){
         menu: null,
         createMenu: function(){
             const createMenu = header.appendChild(document.createElement("div"))
-            createMenu.setAttribute("class", "side-bar h-75 w-100 d-flex flex-column justify-content-start align-items-center bg-dark text-black pt-2");
+            createMenu.setAttribute("class", "side-bar h-75 w-100 d-flex flex-column justify-content-start align-items-center bg-dark text-black mt-2");
             this.menu = createMenu
         },
         links: function(){
