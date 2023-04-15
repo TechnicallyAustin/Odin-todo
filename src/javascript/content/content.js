@@ -1,18 +1,29 @@
-export function content(){
-
-    const page = {
-        mainHeader: function(){
-            const elements = {
-                optionBar: function(){},
-                viewIcon: function(){}
+export function content() {
+const main = document.querySelector(".main")
+const page = {
+        nav: function(){
+            const container = main.appendChild(document.createElement("div"))
+            container.setAttribute("class", "")
+            elements = {
+                menu: function(){},
+                profile: function(){}
             }
-            elements.optionBar()
-            elements.viewIcon()
+            elements.menu()
+            elements.profile()
         },
-        todo: function(){},
+        todo: function(){
+            elements = {
+                label: function(){},
+                container: function(){}
+            }
+        },
         doing: function(){},
         done: function(){}
     }
+    page.nav()
+    page.todo()
+    page.doing()
+    page.done()
 
 
 }
