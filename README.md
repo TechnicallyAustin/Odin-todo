@@ -22,3 +22,5 @@ implementing refactors tomorrow
 refactored form
 
 need to clean up interface
+
+clean up side menu
