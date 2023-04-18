@@ -24,3 +24,5 @@ refactored form
 need to clean up interface
 
 clean up side menu
+
+staging side menu work  
