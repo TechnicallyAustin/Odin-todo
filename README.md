@@ -23,6 +23,8 @@ refactored form
 
 need to clean up interface
 
+adjuding content.js 
+
 clean up side menu
 
 staging side menu work  
