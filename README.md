@@ -27,4 +27,6 @@ adjuding content.js
 
 clean up side menu
 
-staging side menu work  
+staging side menu work
+
+back on track tomorrow
