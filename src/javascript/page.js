@@ -8,12 +8,12 @@ const Page = {
   content: null,
   header: function () {
     const header = this.page.appendChild(document.createElement("header"));
-    header.setAttribute("class", "header h-100 w-100 d-flex justify-content-center align-items-start bg-lgiht");
+    header.setAttribute("class", "header h-100 w-100 d-flex justify-content-center align-items-start bg-secondary");
     sidebar()
   },
   main: function () {
     const main = this.page.appendChild(document.createElement("main"));
-    main.setAttribute("class", "main h-100 bg-dark d-flex flex-column justify-content-around align-items-center mx-3");
+    main.setAttribute("class", "main h-100  bg-light d-flex flex-column justify-content-around align-items-center mx-3");
     content()
   },
   footer: function () {

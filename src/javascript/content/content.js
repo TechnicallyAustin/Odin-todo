@@ -3,16 +3,16 @@ export function content() {
     const page = {
         nav: function(){
             const container = main.appendChild(document.createElement("div"))
-            container.setAttribute("class", "w-100 bg-dark d-flex justify-content-between align-items-center")
+            container.setAttribute("class", "w-100 bg-light d-flex justify-content-between align-items-center px-2")
             const elements = {
                 menu: function(){
                     const menu = container.appendChild(document.createElement("div"));
-                    menu.setAttribute("class", "w-50 bg-light rounded-pill p-2")
+                    menu.setAttribute("class", "w-50 bg-dark text-white rounded-pill p-2")
                     menu.textContent = "MENU"
                 },
                 profile: function(){
                     const profile = container.appendChild(document.createElement("div"))
-                    profile.setAttribute("class", "w-25 bg-light rounded-pill p-2")
+                    profile.setAttribute("class", "w-25 bg-dark text-white rounded-pill p-2")
                     profile.textContent = "PROFILE"
                 }
             }
@@ -27,12 +27,12 @@ export function content() {
                     container: null,
                     newContainer: function(){
                         let container = main.appendChild(document.createElement("div"));
-                        container.setAttribute("class", "w-100 h-25 bg-warning rounded px-2");
+                        container.setAttribute("class", "task-container w-100 d-flex flex-column justify-content-around align-item-start h-25 bg-warning rounded px-4");
                         this.container = container
                     },
                     title: function(){
                         let title = this.container.appendChild(document.createElement("p"))
-                        title.setAttribute("class", "")
+                        title.setAttribute("class", "fs-3 mb-0")
                         title.textContent = label;
 
                     },
@@ -48,5 +48,6 @@ export function content() {
         }
     }
     page.nav()
+ 
     page.taskSections()
 }
